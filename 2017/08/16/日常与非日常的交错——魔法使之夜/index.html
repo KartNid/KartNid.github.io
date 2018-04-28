@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html style="display: none;" lang="zh">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.5.0 -->
+    <script>
+        window.materialVersion = "1.5.0"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Title -->
+    
+    <title>
+        
+            日常与非日常的交错——《魔法使之夜》 | 
+        
+        Karthus`s Blog
+    </title>
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="theme-color" content="#0097A7">
+    <meta name="author" content="">
+    <meta name="description" itemprop="description" content="Zhu Mingrui">
+    <meta name="keywords" content=",ACG,Galgame,视觉小说,型月">
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(key){try{localStorage.removeItem(key)}catch(e){}};lsloader.setLS=function(key,val){try{localStorage.setItem(key,val)}catch(e){}};lsloader.getLS=function(key){var val="";try{val=localStorage.getItem(key)}catch(e){val=""}return val};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var keys=[];for(var i=0;i<localStorage.length;i++){keys.push(localStorage.key(i))}keys.forEach(function(key){var data=lsloader.getLS(key);if(window.oldVersion){var remove=window.oldVersion.reduce(function(p,c){return p||data.indexOf("/*"+c+"*/")!==-1},false);if(remove){lsloader.removeLS(key)}}})}catch(e){}};lsloader.clean();lsloader.load=function(jsname,jspath,cssonload,isJs){if(typeof cssonload==="boolean"){isJs=cssonload;cssonload=undefined}isJs=isJs||false;cssonload=cssonload||function(){};var code;code=this.getLS(jsname);if(code&&code.indexOf(versionString)===-1){this.removeLS(jsname);this.requestResource(jsname,jspath,cssonload,isJs);return}if(code){var versionNumber=code.split(versionString)[0];if(versionNumber!=jspath){console.log("reload:"+jspath);this.removeLS(jsname);this.requestResource(jsname,jspath,cssonload,isJs);return}code=code.split(versionString)[1];if(isJs){this.jsRunSequence.push({name:jsname,code:code});this.runjs(jspath,jsname,code)}else{document.getElementById(jsname).appendChild(document.createTextNode(code));cssonload()}}else{this.requestResource(jsname,jspath,cssonload,isJs)}};lsloader.requestResource=function(name,path,cssonload,isJs){var that=this;if(isJs){this.iojs(path,name,function(path,name,code){that.setLS(name,path+versionString+code);that.runjs(path,name,code)})}else{this.iocss(path,name,function(code){document.getElementById(name).appendChild(document.createTextNode(code));that.setLS(name,path+versionString+code)},cssonload)}};lsloader.iojs=function(path,jsname,callback){var that=this;that.jsRunSequence.push({name:jsname,code:""});try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(path,jsname,xhr.response);return}}that.jsfallback(path,jsname)}};xhr.send(null)}catch(e){that.jsfallback(path,jsname)}};lsloader.iocss=function(path,jsname,callback,cssonload){var that=this;try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(xhr.response);cssonload();return}}that.cssfallback(path,jsname,cssonload)}};xhr.send(null)}catch(e){that.cssfallback(path,jsname,cssonload)}};lsloader.iofonts=function(path,jsname,callback,cssonload){var that=this;try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(xhr.response);cssonload();return}}that.cssfallback(path,jsname,cssonload)}};xhr.send(null)}catch(e){that.cssfallback(path,jsname,cssonload)}};lsloader.runjs=function(path,name,code){if(!!name&&!!code){for(var k in this.jsRunSequence){if(this.jsRunSequence[k].name==name){this.jsRunSequence[k].code=code}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var script=document.createElement("script");script.appendChild(document.createTextNode(this.jsRunSequence[0].code));script.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(script);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var that=this;var script=document.createElement("script");script.src=this.jsRunSequence[0].path;script.type="text/javascript";this.jsRunSequence[0].status="loading";script.onload=function(){that.jsRunSequence.shift();if(that.jsRunSequence.length>0){that.runjs()}};document.body.appendChild(script)}};lsloader.tagLoad=function(path,name){this.jsRunSequence.push({name:name,code:"",path:path,status:"failed"});this.runjs()};lsloader.jsfallback=function(path,name){if(!!this.jsnamemap[name]){return}else{this.jsnamemap[name]=name}for(var k in this.jsRunSequence){if(this.jsRunSequence[k].name==name){this.jsRunSequence[k].code="";this.jsRunSequence[k].status="failed";this.jsRunSequence[k].path=path}}this.runjs()};lsloader.cssfallback=function(path,name,cssonload){if(!!this.cssnamemap[name]){return}else{this.cssnamemap[name]=1}var link=document.createElement("link");link.type="text/css";link.href=path;link.rel="stylesheet";link.onload=link.onerror=cssonload;var root=document.getElementsByTagName("script")[0];root.parentNode.insertBefore(link,root)};lsloader.runInlineScript=function(scriptId,codeId){var code=document.getElementById(codeId).innerText;this.jsRunSequence.push({name:scriptId,code:code});this.runjs()};lsloader.loadCombo=function(jslist){var updateList="";var requestingModules={};for(var k in jslist){var LS=this.getLS(jslist[k].name);if(!!LS){var version=LS.split(versionString)[0];var code=LS.split(versionString)[1]}else{var version=""}if(version==jslist[k].path){this.jsRunSequence.push({name:jslist[k].name,code:code,path:jslist[k].path})}else{this.jsRunSequence.push({name:jslist[k].name,code:null,path:jslist[k].path,status:"comboloading"});requestingModules[jslist[k].name]=true;updateList+=(updateList==""?"":";")+jslist[k].path}}var that=this;if(!!updateList){var xhr=new XMLHttpRequest;xhr.open("get",combo+updateList,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){that.runCombo(xhr.response,requestingModules);return}}else{for(var i in that.jsRunSequence){if(requestingModules[that.jsRunSequence[i].name]){that.jsRunSequence[i].status="failed"}}that.runjs()}}};xhr.send(null)}this.runjs()};lsloader.runCombo=function(comboCode,requestingModules){comboCode=comboCode.split("/*combojs*/");comboCode.shift();for(var k in this.jsRunSequence){if(!!requestingModules[this.jsRunSequence[k].name]&&!!comboCode[0]){this.jsRunSequence[k].status="comboJS";this.jsRunSequence[k].code=comboCode[0];this.setLS(this.jsRunSequence[k].name,this.jsRunSequence[k].path+versionString+comboCode[0]);comboCode.shift()}}this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
+    <link rel="icon" sizes="192x192" href="/img/favicon.png">
+    <link rel="apple-touch-icon" href="/img/favicon.png">
+
+    <!--iOS -->
+    <meta name="apple-mobile-web-app-title" content="Title">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="480">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Karthus`s Blog">
+
+    <!-- Site Verification -->
+    
+    
+
+    <!-- RSS -->
+    
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?MKetZV3cUTfDxvMffaOezg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "΢���ź�", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #00838F;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #0097A7 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #0097A7 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #0097A7 !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #00838F;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-color: #F5F5F5;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+        background-color: #fff;
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icon -->
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?qcusAULNeBksqffqUM2+Ig==", true)</script>
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="http://yoursite.com">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="日常与非日常的交错——《魔法使之夜》 | Karthus`s Blog">
+    <meta property="og:image" content="http://yoursite.com/img/favicon.png" />
+    <meta property="og:description" content="Zhu Mingrui">
+    <meta property="og:article:tag" content="ACG"> <meta property="og:article:tag" content="Galgame"> <meta property="og:article:tag" content="视觉小说"> <meta property="og:article:tag" content="型月"> 
+
+    
+        <meta property="article:published_time" content="Wed Aug 16 2017 12:47:52 GMT+0800" />
+        <meta property="article:modified_time" content="Sat Apr 28 2018 20:56:59 GMT+0800" />
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:title" content="日常与非日常的交错——《魔法使之夜》 | Karthus`s Blog">
+    <meta name="twitter:description" content="Zhu Mingrui">
+    <meta name="twitter:image" content="http://yoursite.com/img/favicon.png">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="http://yoursite.com" />
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="http://yoursite.com/2017/08/16/日常与非日常的交错——魔法使之夜/index.html" />
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://yoursite.com/2017/08/16/日常与非日常的交错——魔法使之夜/index.html",
+    "headline": "日常与非日常的交错——《魔法使之夜》",
+    "datePublished": "Wed Aug 16 2017 12:47:52 GMT+0800",
+    "dateModified": "Sat Apr 28 2018 20:56:59 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://ws1.sinaimg.cn/large/006wwUIngy1fiij7w1fpuj30dc0dcmxn.jpg"
+        },
+        "description": "Hi, nice to meet you"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Karthus`s Blog",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": ",ACG,Galgame,视觉小说,型月",
+    "description": "Zhu Mingrui",
+}
+</script>
+
+
+    
+
+    <!-- Analytics -->
+    
+    
+    
+
+    <!-- Custom Head -->
+    
+
+</head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#关于型月世界"><span class="post-toc-number">1.</span> <span class="post-toc-text">关于型月世界</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#魔术和魔法"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">魔术和魔法</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#关于作者"><span class="post-toc-number">2.</span> <span class="post-toc-text">关于作者</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#关于《魔法使之夜》"><span class="post-toc-number">3.</span> <span class="post-toc-text">关于《魔法使之夜》</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#简介"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">简介</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#三无的胜利"><span class="post-toc-number">3.2.</span> <span class="post-toc-text">三无的胜利</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#王道与非王道"><span class="post-toc-number">3.3.</span> <span class="post-toc-text">王道与非王道</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#音乐"><span class="post-toc-number">3.4.</span> <span class="post-toc-text">音乐</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#年代背景"><span class="post-toc-number">3.5.</span> <span class="post-toc-text">年代背景</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#关于角色"><span class="post-toc-number">4.</span> <span class="post-toc-text">关于角色</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#静希草十郎"><span class="post-toc-number">4.1.</span> <span class="post-toc-text">静希草十郎</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#苍崎青子"><span class="post-toc-number">4.2.</span> <span class="post-toc-text">苍崎青子</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#久远寺有珠"><span class="post-toc-number">4.3.</span> <span class="post-toc-text">久远寺有珠</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#苍崎橙子"><span class="post-toc-number">4.4.</span> <span class="post-toc-text">苍崎橙子</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#关于其他"><span class="post-toc-number">5.</span> <span class="post-toc-text">关于其他</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#型月社最好入门的游戏"><span class="post-toc-number">5.1.</span> <span class="post-toc-text">型月社最好入门的游戏</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#杂居时代"><span class="post-toc-number">5.2.</span> <span class="post-toc-text">杂居时代</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#一个深不见底的坑"><span class="post-toc-number">5.3.</span> <span class="post-toc-text">一个深不见底的坑</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#型月十周年"><span class="post-toc-number">5.4.</span> <span class="post-toc-text">型月十周年</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#后记"><span class="post-toc-number">6.</span> <span class="post-toc-text">后记</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#引用"><span class="post-toc-number">6.1.</span> <span class="post-toc-text">引用</span></a></li></ol></li></ol>
+    </ul>
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        <!-- Custom Thumbnail -->
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(https://ws1.sinaimg.cn/large/006wwUIngy1fililvp5w8j31gu0gc4qp.jpg)">
+    
+            <p class="article-headline-p">
+                日常与非日常的交错——《魔法使之夜》
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="https://ws1.sinaimg.cn/large/006wwUIngy1fiij7w1fpuj30dc0dcmxn.jpg" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong></strong>
+        <span>8月 16, 2017</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/ACG/">ACG</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/Galgame/">Galgame</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/型月/">型月</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/视觉小说/">视觉小说</a>
+    </ul>
+    
+
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=日常与非日常的交错——《魔法使之夜》&url=http://yoursite.com/2017/08/16/日常与非日常的交错——魔法使之夜/index.html&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=日常与非日常的交错——《魔法使之夜》&url=http://yoursite.com/2017/08/16/日常与非日常的交错——魔法使之夜/index.html&via=" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com/2017/08/16/日常与非日常的交错——魔法使之夜/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Karthus`s Blog&title=日常与非日常的交错——《魔法使之夜》&summary=Zhu Mingrui&pics=http://yoursite.com/img/favicon.png&url=http://yoursite.com/2017/08/16/日常与非日常的交错——魔法使之夜/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 QQ
+            </li>
+        </a>
+    
+
+    <!-- Share Telegram -->
+    
+        <a class="post_share-link" href="https://telegram.me/share/url?url=http://yoursite.com/2017/08/16/日常与非日常的交错——魔法使之夜/index.html&text=日常与非日常的交错——《魔法使之夜》" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Telegram
+            </li>
+        </a>
+    
+</ul>
+
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <p>在这个“糜烂”的暑假里，我每天的事情就是吃了睡睡了玩，<del>似乎</del>已经成为了一条咸鱼。<br>自然，在这种极度糜烂的暑假中，我通关了许多游戏。今天，我要介绍的是，著名游戏公司型月社于2012年发行的文字冒险类游戏——《魔法使之夜》（下面简称魔夜）。</p>
+<p><img src="https://ws1.sinaimg.cn/large/006wwUIngy1filhwktl8uj30ye15ogqz.jpg" alt=""></p>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=501638&auto=0&height=66"></iframe>
+
+
+
+<h2 id="关于型月世界"><a href="#关于型月世界" class="headerlink" title="关于型月世界"></a>关于型月世界</h2><p>在正式开始之前，我们最好先了解一下魔夜的核心设定——型月世界。<br>型月世界，顾名思义，就是型月社所构建的世界。它是由型月社的创始人之一奈须蘑菇所构建，之后与其他几位作家、漫画家所共同完善的一个基于现代世界的架空世界 。型月社的所有作品（游戏、漫画、小说）都共用这个世界设定。这也是型月的作品最吸引人的地方。它那宏大的世界观以及在各个作品之间的穿梭的各类人物散发着其他galgame无法企及的魅力。<br>型月世界下的作品有：Fate系列、月姬系列、空之境界系列、DDD系列、魔法使之夜，以及闻其声未见其人的《冰之花》。<br>象征着月世界的独特概念包括：“根源之涡、魔术、魔法、死徒、抑止力”这几个关键词。而在魔夜里最核心的概念就是“魔术和魔法”。</p>
+<h3 id="魔术和魔法"><a href="#魔术和魔法" class="headerlink" title="魔术和魔法"></a>魔术和魔法</h3><p>“魔术”与“魔法”是初涉型月作品的新人容易搞混的概念，但也是该系列作品里重要的设定，这里特别说明一下。<br>型月世界观里，在某个时代中，用奇迹的手法实现的现象，就结果而言科技也能做到，那就叫魔术；将魔术或科学技术不可能实现的事象实现，魔术师们称之为魔法。当一个事象只要花费时间和资金就能实现时，即使它如何困难都不会被当做魔法。<br>在人类的文明尚处于幼年的时期，所有的魔术都是魔法。不过伴随着科学技术的进步，以人类之手所“能做到的事”增多了，而相对地魔法就减少了。残留在现代的“魔法”的数量非常稀少，变成只有仅仅的五个。<br><img src="https://ws1.sinaimg.cn/large/006wwUIngy1film22lv78j318g0oynh4.jpg" alt=""><strong>魔夜里面对于五大魔法的描述</strong></p>
+<p>因此，魔夜就是围绕着“魔术”和“魔法”展开的故事。</p>
+<h2 id="关于作者"><a href="#关于作者" class="headerlink" title="关于作者"></a>关于作者</h2><p>之前说过，型月世界是由奈须蘑菇构建的。虽然后面有其他人加入完善，但是所有核心的设定都是在蘑菇自己的脑子里。<br>魔夜最初是奈须蘑菇于1996年冬天写成初稿的长篇小说。据本人所言，是第一部以“给朋友以外的人看”为前提创作的小说，动笔契机则是看了《EVA》第一话（日本国民动画果然名不虚传）。蘑菇本来想向新人奖投稿，但因为无法将内容控制在350页以下而放弃，这也是和武内崇建立同人社团的契机。后来仅存的那本被悄悄放在TYPE-MOON的会议室里。武内崇和OKSG都阅读过它。本作全篇由3部组成，由于目前只完成了第1部，武内崇曾经说过“想要继续读”。然后这部小说被改编成了游戏。《魔法使之夜》游戏虽然直到五年前才正式发行，但其原作却是奈须蘑菇20出头时第一部执笔的小说。日后的角色设计、剧情桥段、甚至世界观的骨干，可以说都是由此架构发展而成。换句话说，《魔法使之夜》正是「奈须王国」创作之路的原点，TYPE-MOON的第一步便是由此跨出。</p>
+<h2 id="关于《魔法使之夜》"><a href="#关于《魔法使之夜》" class="headerlink" title="关于《魔法使之夜》"></a>关于《魔法使之夜》</h2><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>1980年代后半，正是繁华与活力的时代的末期。在地方都市三咲町，有传言说“在坡道上的房子里，住着两个魔女”。从乡村来到三咲町的少年静希草十郎，与转入学校的学生会长苍崎青子，以及孤高的美少女久远寺有珠相遇了。实际上，这两人正是坡道上的房子里住着的魔女。由于一系列的事件，完全没有共同点的三人在久远寺宅邸中开始了共同生活。<br>虽然看上去这是比较传统的galgame调调，但是其实这只是三人的“杂居物语”。没有爱情，只有各自之间的利益交换以及慢慢产生的友情。</p>
+<h3 id="三无的胜利"><a href="#三无的胜利" class="headerlink" title="三无的胜利"></a>三无的胜利</h3><p>而这部游戏，最有意思的地方莫过于它是一部三无游戏——无H、无选项、无配音。它是一部彻彻底底的视觉小说，它没有任何东西来干扰你的阅读体验。当然，这也是非常见仁见智的地方。对于我来说，这种做法博得了我很多的好感。只是对于一些探索精神强的或者对于“福利”以及配音比较看重的玩家来说，这个游戏是一个异端。所以对于它的评论，网上也是毁誉参半，各说各有理。当然其实双方的确都很有理。不过这并不能否认魔夜是一部优秀的作品。尤其是，即使这部游戏没有语音，它的数据大小却达到了惊人的将近5G！这个大小是很多有配音、而且剧情还比魔夜长的galgame都达不到的。<br><img src="https://ws1.sinaimg.cn/large/006wwUIngy1filpqz7mvcj30bp0h20t2.jpg" alt=""></p>
+<p>如此可见，型月社对于这部作品还是充满了诚意的。优秀的配乐，先进的音效、精美的人设，以及让这部游戏那么大的“罪魁祸首”——大量的3D效果。背景图片的移动、扭曲、震动、渐变，光线特效，这是“大量素材组成的全动态演出”。它的演出效果可以说登峰造极，在某种意义上实现了比“动画”更精彩的体验。<br>当然这也是有弊端的，在游戏中大型位图的高速移动时候经常伴有掉帧的情况出现。刚开始制作的时候，蘑菇和小山以及其他制作人员并没有想过追求演出效果到现在这种程度。在企划当时，只是想做出最精美的静态CG和静态的演出。但结果在制作过程中，不断追求视觉效果的同时，不知不觉整体方向就发生了转变。也因为这样的关系，明明剧本早已写完，却不得不将上市日期反复推延，变成了业界跳票名作。（2010.9.1-2012.4.12）<br>那么为什么型月要把魔夜做成一部三无小说呢？剧本担当蘑菇是有解释，先是关于无H：</p>
+<blockquote>
+<p>“为了适应GALGAME玩家的需求，之前的作品都有相应地加入服务玩家的内容。比如《月姬》，一开始只是吸血鬼艾尔奎特和主人公远野志贵以及吸血鬼猎人雪儿三个人的故事。在那之后，为了让游戏线路更多，也为了增加更多让玩家高兴的要素，加入了秋叶以及两位女仆的线路，还加入了诸如五月这种悲情角色。《Fate/stay night》也是同理，原型小说中都是男性的Saber和Rider都转换了性别，更加入了处于对手位置的魔术师凛和‘治愈系’女主角樱。将传奇小说一举转变为了GALGAME的形式。但这次的《魔法使之夜》，我觉得并没有对内容以及设定进行后期添加以及修改的必要。首先，这部作品是我创作的原点；其二，小山的作画实在太直击我肾上腺素了。那上色，那无法隐瞒的色气，在丝毫没有加入杀必死的剧情中也能毫无也能毫无掩盖地散发出来。”</p>
+</blockquote>
+<p>关于无选项：</p>
+<blockquote>
+<p>《魔法使之夜》与大多数以第一人称视角开始展开的视觉小说不同，是按照第三人称视角、以旁观的视角来展开的，没理由出现让旁观者来决定剧情走向的道理。</p>
+</blockquote>
+<p><del>（潜台词：我给你们讲一个我老婆的故事你们都不许插嘴）</del><br>至于无配音，理由就相当的有趣了：FSN和FHA都没有配音却都能卖个几十万份，所以蘑菇决定魔夜也不配音了。虽然这的确让人更把注意力放在面前的文字和画面上，但是我还是好想听青子和有珠的声音啊。。。。。。</p>
+<h3 id="王道与非王道"><a href="#王道与非王道" class="headerlink" title="王道与非王道"></a>王道与非王道</h3><p>魔夜发行之前，型月已经发行了《月姬》系列、《Fate/Stay Night》以及《Fate/Hollow Ataraxia》。这三部都属于比较典型的王道系作品。而蘑菇在王道系作品的路上也算是黔驴技穷了，自然需要非王道系的作品来做一个过渡。初步长度定在一部文本库小说的长度。然而要找一个什么作品呢？正当蘑菇犯难之时，他的<del>基友</del>灵魂之友武内崇把那本《魔法使之夜》的小说拍在了他的桌子上，蘑菇顿时欣喜若狂：对呀！《魔法使之夜》正是一部非王道系的作品，长度也刚刚好。</p>
+<h3 id="音乐"><a href="#音乐" class="headerlink" title="音乐"></a>音乐</h3><p>音乐方面，因为作品中的年代关系，蘑菇想以古典乐为主，过程中引用了数首世界名曲来衬托这种氛围，比如维瓦尔第的四季中冬的改编版，比如李斯特的《爱之梦》，再比如被无数作品用烂的Gymnopédie No.1。<br>作为ED的主题曲《星が瞬くこんな夜に》由supercell音乐家ryo作曲，人物主题曲《静希草十郎》也着实让人惊艳。</p>
+<p>而担任音乐制作的，除了3个御用作曲家外，还有曾为《鬼武者》系列配音的深泽秀行。深泽秀行与型月和UFO都交好，上面说到的型月10周年开场曲，PSV上《Unite～Fate/stay night [Ralta Nua] Suite》的混曲，以及现在的《Fate/stay night UBW》的作曲也由他来担当。</p>
+<p>深泽秀行擅长的是金属乐和电子乐，然后融合管弦乐、颂歌等营造一种黑暗神秘悠远的氛围，更值得一提的是他非常出色的衬托画面剧情氛围的能力，这一点和菅野洋子十分相似。在FZ火热的时候毒舌老外系列吐槽过一点：“两只狗打架配上FZ音乐也很史诗”。这当然是戏称，但梶浦由记“辉空的圣歌姬”各路神曲美则美矣，但更多的时候会根据大致氛围做情绪的主观抒发，不着眼于剧情的衔接和契合，“画面为歌曲服务”，带感是带感了，却也有了既视感，不过在梶浦由记深深热爱的空境里，情绪渲染氛围衬托和剧情就比较完美了。</p>
+<p>也正是深泽秀行对情绪、氛围、故事叙事节奏同步率的追求，使得游戏整体进行中感受不到BGM“刻意”的存在，使人感到舒服且能更专注于画面和文本，回过头来你可能无法记起某个旋律，却能回想起场景和情节以及当时的情绪，以及那似在耳边却又捉摸不定的音乐。顶级的音乐配上奢华的演出效果，让魔夜站在了文字类游戏的顶端，按照蘑菇的说法就是在过十年也不会过时。片头青子撑着红伞，走在散丝密雨中的场景让内心震撼又惶然。正在迈着近代化步伐前进的小镇、以及憧憬着未来的人们，配合着深泽秀行指下的主旋律，让人顿感觉这是精致的工艺品。</p>
+<p>蘑菇那“想做出稳静而美丽的世界”的心情，通过强调真实性的上色和背景美术带来的强烈的现实感和氛围，很好的传达到了玩家的心里。整个《魔法使之夜》本篇，并没有太多的高潮，有的只是80年代末期那种缓缓流动的时间与空间，在那个社会环境下，遵循守旧的魔术师们遭遇的文明冲击，以及虽然排斥但却必须想办法融入社会的那种复杂感情。</p>
+<p><img src="https://ws1.sinaimg.cn/large/006wwUIngy1filuywni7oj30wd0oz1ir.jpg" alt=""></p>
+<p><strong>这也正是一代人的青春，一代人的迷茫。</strong><br><strong>日本的“泡沫经济”自80年代中后期开始的，这也是《魔法使之夜》的舞台。</strong></p>
+<h3 id="年代背景"><a href="#年代背景" class="headerlink" title="年代背景"></a>年代背景</h3><blockquote>
+<p>1986年12月到1991年2月之间的4年零3个月，是日本战后仅次于60年代后期的经济高速发展之后的第二次大发展时期。冷战进入末期，东欧剧变，苏联进入解体的节奏，美国房地产金融危机，经济走入低谷，社会信用危机日益严重，失业率不断上升。与此同时日本政治经济却都处于比较安定的时期，全体国民预感到“日本的时代”即将到来。但这次经济浪潮受到了大量投机活动的支撑，因此随着90年代初泡沫破裂，日本经济出现大倒退，此后进入了平成大萧条时期。</p>
+</blockquote>
+<p>近20年的经济衰退时期对日本社会各个方面的打击都是极其严重的。日本动画界原有的很多赞助商纷纷倒闭，原创动画产量锐减。各种引发社会动荡的事件接踵而至，阪神大地震，后来又发生了奥姆真理教毒气事件，一时间整个日本社会陷入了恐慌状态，而世纪末人类灭绝说再次被神经敏感的日本民众抬了出来。<br>1973年出生的奈须蘑菇，正好经历了日本经济泡沫从产生到破裂的全过程，其在不同的访谈中也反复提到了这个词汇。这让之前怀有与世界接轨幻想的人们特别是年轻人梦想崩毁，所以那一代人普遍带有一种迷茫的情绪。</p>
+<p>而在特定时代环境下横空出世的《EVA》完全就是当时日本人精神的写照。人类补完计划就是对现实世界里人心的隔阂的客观反映。而三位主角的性格刻画，也适时的反应出了那个时代社会边缘御宅族的精神原貌，自闭，缺乏感情和表里不一。《EVA》一扫颓势引发了现象级的热潮，宅的群体爆炸增长、各路媒体的造势、制作委员会的出现、商业动画运营模式的更新，宿命般地帮助日本动画产业再次起飞。</p>
+<p>也正是《EVA》，使得蘑菇走上了创作之路，包括武内崇后来设计的FHA的卡莲也是以凌波丽为原型，这一强音节鼓舞了一个时代的人。当然还是有后遗症的，比如TYPE-MOON越来越熟练的“新世纪骗钱计划”，仔细对比如出一辙。</p>
+<p>《魔法使之夜》中的三咲镇也是处于这种环境下，突飞猛进的现代化让这个小镇不断的发展着，但这些虚假的繁荣背后，却是不断加深的隐患。而土桔由里彦老人和他的面包游乐场的末路，就是蘑菇笔下那个时代的缩影。蘑菇借由老人与他的游乐场的故事，隐射了当时社会的虚假繁荣和后来将要面对的大衰退——</p>
+<blockquote>
+<p>“在泡沫经济还没有破裂的时期，那种纯真的幻想以及周围欣欣向荣的氛围，对于现在的我来说也是无可替代的宝物。能够在2010年重新写以那个时代为背景的故事，是非常幸福的事情。”</p>
+</blockquote>
+<h2 id="关于角色"><a href="#关于角色" class="headerlink" title="关于角色"></a>关于角色</h2><p>《魔法使之夜》的主要角色有三个：男主角静希草十郎，女主角苍崎青子与久远寺有珠。还有一个重要的配角，苍崎青子的姐姐苍崎橙子。</p>
+<h3 id="静希草十郎"><a href="#静希草十郎" class="headerlink" title="静希草十郎"></a>静希草十郎</h3><p><img src="https://ws1.sinaimg.cn/large/006wwUIngy1filxtg77gaj30if0oo4ay.jpg" alt=""></p>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=501673&auto=0&height=66"></iframe>
+
+
+<p>这部游戏的男主角，是和很多游戏很不同的：他来自一个完全与世隔绝的小村庄，没有任何现代设备，过着几乎原始人的生活。因此，他的人生观、世界观和价值观，和普通人有着很大的区别。在我看来，这也是为什么这部游戏没有选项的原因之一：你完全不可能和这个真真正正如同一张白纸一样的少年用相同的选择。<br>在他离开村庄，来到这座城市的时候，他是非常震惊的，街上走的那些铁盒子，路上人们手里拿的东西，以及四周高大的建筑，这些都是他从来没见过的。也因此，当他目睹了青子用魔术杀“人”的时候，他也没觉得有多不可思议的，因为他觉得在现代化的城市里什么可能性都有。<br><img src="https://ws1.sinaimg.cn/large/006wwUIngy1filw2vndrsj318f0ok1et.jpg" alt=""></p>
+<p>他为人和善，很不轻易发怒，对待任何人都是和和气气的，从不恶意揣测别人，也听不懂别人话里的挖苦和讽刺。即使别人对于他并没有抱太多善意，他也会以<strong>完全</strong>的善意来回报。其实确切点来说，这人是个天然呆……不过，他也是一个对于自己相信的事，绝不宣之于口的坚实派。</p>
+<p>也正因为草十郎这不同于常人的三观以及完全无害的性格，才能让他之后看见青子和有珠的时候还能冷静下来，也正因如此，他才能让青子感到束手无策，才能让本来因为看见了魔术而要被杀人灭口的自己活下来。</p>
+<h3 id="苍崎青子"><a href="#苍崎青子" class="headerlink" title="苍崎青子"></a>苍崎青子</h3><p><img src="https://ws1.sinaimg.cn/large/006wwUIngy1filxtvyuxuj30nk0p0ndv.jpg" alt=""></p>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=501645&auto=0&height=66"></iframe>
+
+
+<p>讲道理，苍崎青子是<strong>主角三人组</strong>里，性格最接近于普通人的。个性大而化之，做事随意，喜欢自由。孤高、笨拙、却很自由、随处可见的十六岁少女。淡然的接受了自己作为魔术师的人生后， 仍热爱着作为正常人生活的坚强者。 同居人的评价，她是个对自己天然的个性没有自觉的秀才。<br>她原本是作为一名普通学生而过著普通生活，热爱摇滚。</p>
+<blockquote>
+<p>“Lucky！也就是说我家的麻烦事全部推给大姐就行了呢。”</p>
+</blockquote>
+<p>然而两年前她的祖父的那句“嗯……还是让青子来当苍崎家的继承人吧。”让她的人生轨迹完全和普通人分开了。好在她的不服输的精神以及勇敢的性格，她还是接受了这个事实。青子她拥有对自己相信的事，一定会贯彻始终和管到底的大姐头个性，她有著刚强又不服输的坚强性格，并且是在学校担任著学生会长的才女。从学校部份学生的角度来看，苍崎青子她是完美无缺的学生会会长，部份学生都很崇拜她和敬畏她。<br>她的魔术特性是能够破坏物体的「魔力放出」。青子她擅长以无限回转而被恐惧的高速咏唱攻击性魔术，关于破坏面是“稀代的魔女”，被称为人间飞弹发射器，追求单点突破的战况的话，她是无人可及的破坏之魔女。</p>
+<p>“第五法”的拥有者，世间仅存的几位魔法使。</p>
+<p>关于青子，还有很多可以说的。比如她被蘑菇称为“老婆”。比如她其实是《Fate/Stay Night》里的远坂凛、《月姬》里的远野秋叶、《空之境界》里的黑桐鲜花的原型。<del>（蘑菇：我超爱我老婆的！）</del></p>
+<h3 id="久远寺有珠"><a href="#久远寺有珠" class="headerlink" title="久远寺有珠"></a>久远寺有珠</h3><p><img src="https://ws1.sinaimg.cn/large/006wwUIngy1filxuycjakj30s90oxqol.jpg" alt=""></p>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=501660&auto=0&height=66"></iframe>
+
+
+<p>有珠是真正意义上的魔术师。她是避世的魔女，擅长的魔术也很奇幻：她是<strong>擅长以童话为主题的咒术以及药学的梦幻仙境系魔女</strong>。<br>自古魔术师在工房里进行研究需要使魔去负责研究素材收集、外界侦查以及驱除外敌。使魔一般会选择以小动物为原材料，因为需要术者进行魔力提供，所以能够自给自足的小动物会便利很多。但有珠的使魔——Ploy Kickshaw却跟以往的使魔完全不同。Kickshaw一词，是“无价值的饰物”，华而不实的小玩意，而Ploy在欧洲也有小玩具的意思，两个词拼起来，就是这个“童话的怪物”。</p>
+<p>而这些童话的怪物，是由童话为设计主轴创作出来的空想使魔。因此必须遵从自己所对应童话，不能在现代文明圈随意发挥。但另一反面，现代兵器也无法对它们造成伤害，而且一旦处于魔术环境下，更会展现出超绝的实力。魔女们不断地将一代一代传下来的Ploy改造、强化，有珠的母亲因为对路易斯·卡罗很迷恋，所以就以常在其笔下出现的鹅妈妈童谣为设计核心，加入自己的理念制作出了现在有珠所使用的大多数的Ploy。在这些Ploy中，特别强力的有三只，被称为Great Three。这三只都是有珠一族初代魔女制作出来的。</p>
+<p>由此可见有珠的设定与月世界世界观下的魔术体系有所偏离。也是与近代文明相关性最小的，似乎就像是从无穷远处走来的人，其魔女气质性格和拥有的童话般的咒术颇有蘑菇自画像的意味：纷繁复杂而有趣的梦境编织者。青子的形象拆解提取后渗透到日后《月姬》的秋叶《Fate》的远坂凛《空境》的鲜花里；《空境》的黑桐干也和两仪式的形象叠加修建后就是远野志贵；而《Fate/Prototype》作为奇幻史诗架构则使得符号化移植更容易，中更是直接将男性的亚瑟王转为女性（虽是画龙点睛之笔），而把原saber和女主的性格设定移植到了远坂凛和Archer上。。。。。<strong>但有珠是独一无二的，无法重叠到其他作品的任意角色上面去，也没有借用改编任何范式。</strong></p>
+<blockquote>
+<p>“只有有珠，我完全不想玷污她，她永远是Only one的”。</p>
+</blockquote>
+<h3 id="苍崎橙子"><a href="#苍崎橙子" class="headerlink" title="苍崎橙子"></a>苍崎橙子</h3><p><img src="https://ws1.sinaimg.cn/large/006wwUIngy1fily13scnsj30t30oldvb.jpg" alt=""></p>
+<p>这一部的最终boss。《空之境界》的重要人物。</p>
+<p>出生于拥有日本首屈一指灵地的苍崎家，在对待根源之涡的问题上与身为师父的祖父产生了矛盾，被剥夺苍崎家魔法使继承者的权利离开苍崎家，只身前往伦敦时钟塔。<br>魔术师的阶位是最高位的冠位（Grand）。与妹妹苍崎青子不同，作为魔术师的能力是十分优秀的，加之身为最高位的人偶使，被魔术协会扣上了“封印指定”。在《Lord·埃尔梅罗二世事件簿》中已经被解除了封印指定。<br>买下一幢废弃的半成品商业大楼并开设了现在的工房“伽蓝之堂”。同时也是黑桐干也的老板，黑桐鲜花的师父。</p>
+<p>人为的双重人格者，通过戴上、摘下眼镜来切换人格。戴着眼镜时语气婉柔，放下眼镜时会变成冷冷的语调。哪边是真正的苍崎橙子，本人也不大清楚的样子。不管有没有人情味，根本的部分是浪漫主义者。<br>喜欢新的东西，对有兴趣的东西百般折腾。speed狂 [speed：1、速度；2、amphetamine（安非他明）的俗称。兴奋剂的一种。促进大脑工作，用于防止睡眠、去除疲劳]。<br>明明讨厌自己的名字，却有要在身体的某处戴上一个橙色装饰品的习惯。<br><img src="https://ws1.sinaimg.cn/large/006wwUIngy1fily6xha4yj30zq0k0x38.jpg" alt=""><strong>电影《空之境界》里的橙子的形象</strong></p>
+<p>亦邪亦正，也是典型的魔术师形象。</p>
+<p>哦对了，在FSN HF线里，TE结局“春天归来”里，士郎能够重塑肉身靠的就是橙子的人偶。</p>
+<h2 id="关于其他"><a href="#关于其他" class="headerlink" title="关于其他"></a>关于其他</h2><h3 id="型月社最好入门的游戏"><a href="#型月社最好入门的游戏" class="headerlink" title="型月社最好入门的游戏"></a>型月社最好入门的游戏</h3><p>因为是型月的原点，所以可以说这一部是型月作品里最适合入坑的。名词讲解很到位，玩起来不累<strong>（尤其适合初玩galgame的童鞋们）</strong>无h情节<strong>（可以在任何场合任何时间玩）</strong>，虽然文本有些晦涩但是不算太难懂。而且画风超棒的！</p>
+<h3 id="杂居时代"><a href="#杂居时代" class="headerlink" title="杂居时代"></a>杂居时代</h3><p>《魔法使之夜》的创作原点，四个字来概括就是“杂居时代”。奈须蘑菇创作《魔法使之夜》的最初灵感，来自冰室冴子的《杂居时代》，因为受到那本书的影响，所以早在写魔夜小说的10多年前就已经有了这种构想，有了“我也想写杂居生活”的冲动。</p>
+<blockquote>
+<p>蘑菇：“当时写《魔夜》的一大动力就是与女孩子同居于大宅内的故事”</p>
+</blockquote>
+<p>教练我也想的。</p>
+<p>虽在同一屋檐下生活，三人的杂居还没有丝毫的恋或者爱。但在这种环境下，三人之间的距离，生理上和心理上，都随着剧情的进展而不断变化着，这种不知是恋还是爱的青春的懵懂心情，这就是青·春啊同学们！</p>
+<p>本来绝不相容的三人，在不改变自身价值观以及生活作风的情况下共同生活着。当然，三人并不是完全没有改变，草十郎刚从山上下来的时候，才正式成为了“社会人”，他的妥协与抗争也是魔夜的主题之一——“都市与森林，文明的进化和退行”。原本只生活在自然中的人类，在接近了文明所带来的便利以及幸福后产生了变化，不断变化的草十郎与一成不变的魔女有珠以及不知是变还是不变的青子。三人的命运，在那间不大不小的洋馆内交织在了一起。这还是青·春啊同学们！</p>
+<p>久远寺邸这个特殊的密闭杂居生活空间距离感相当的恰当。不至于太宽广使得三人交集太少，也不至于太窄使得三人丧失了独自世界的魅力。三名角色都有着自己的“障壁”，而在碰撞、疏远、支持、破壁的种种生活，也就是青·春啊同学们！</p>
+<p>虽说不是因为存在恋爱之情、而是基于相互之间的利害一致，才选择共同生活在一个屋檐下，组成了人类社会单位最小的集团，但奈须蘑菇温柔感性的本性来看，依然是用稍微与众不同的世界观和人物设定包装起来的boy meets girl 的故事，只是会在这样的故事里去追寻人性人情和人构成的苍茫世界中闪光的意义。</p>
+<p><img src="https://ws1.sinaimg.cn/large/006wwUIngy1fim01ykzi6j318g0xctfp.jpg" alt=""></p>
+<h3 id="一个深不见底的坑"><a href="#一个深不见底的坑" class="headerlink" title="一个深不见底的坑"></a>一个深不见底的坑</h3><p>关于《魔法使之夜》的续作，直接引用一个访谈：</p>
+<blockquote>
+<p>4Gamer：「于是最后，希望能听听TM关于以后的预定。特别是关于《魔夜》以后的发展，相信很多fans也很在意…」<br>奈须蘑菇：「那，那种企划书也是有的呢！…哎呀，真是对不起。《魔夜》当然到此故事就告一段落了，可是那条街上以三人为中心的故事依然在继续发展着。就像《十角馆杀人预告》之后有《水车馆幻影》一样。…《魔夜》大概全部有3作吧。说到最后青子和草十郎，有珠的将来也将清楚的写出来。…当然也不想让玩家再这么等下去，发表的时候希望《魔夜》2部和3部之间的间隔能短一些。在第2部本格的故事将开始。」<br>4Gamer：「结果上，不是橙子、而是青子被选为苍崎家的后继者这件事的理由，在作中并没有明确的讲出来吧？这也是请待后文分解的一部分吗？」<br>奈须蘑菇：「游戏作品中有提示，悟性高的人应该已经发觉了。…青子的魔术回路就是提示。虽说橙子的魔术回路是业界屈指可数的，但是苍崎的第五魔法不需要那种东西。不如说，青子的单纯才是最适合的，这种感觉。」<br>4Gamer：「明白了。那么最后请こやま和つくり说两句」<br>こやま：「《魔夜》是第一个我做原画的作品，果然对本作有着不同的感情。所以，《魔夜》2部和3部也会好好做，交出一份令人满意的答卷。」</p>
+</blockquote>
+<h3 id="型月十周年"><a href="#型月十周年" class="headerlink" title="型月十周年"></a>型月十周年</h3><p><img src="https://ws1.sinaimg.cn/large/006wwUIngy1fim0hsr6f7j31ao0t6qfr.jpg" alt=""></p>
+<p><img src="https://ws1.sinaimg.cn/large/006wwUIngy1fim0lkio9oj30sg0lc0xt.jpg" alt=""></p>
+<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>至此，对于这一部游戏的介绍就差不多结束了。我没有剧透太多的东西，是希望大家能够自己去玩玩。文本量不大<del>（然而澄空学园还是翻译了三年）</del>，不过蘑菇写的文比较晦涩难懂<del>（加大翻译难度）</del>，但玩下来可能也就十几个小时。网上资源很多，我这里就不发链接了。希望各位玩的愉快。</p>
+<h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3><p>本篇推荐文在一些地方引用了知乎作者“苍狗”的话。原地址：<a href="https://www.zhihu.com/question/27648141" target="_blank" rel="noopener">https://www.zhihu.com/question/27648141</a></p>
+
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用 gitcoment -->
+<div id="gitment-comment">
+    <!-- Gitment 评论框 -->
+<div id="container"></div>
+</div>
+<style>
+    #gitment-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+    var gitment = new Gitment({
+        //id: '页面 ID', // 可选。默认为 location.href
+        owner: 'KartNid',
+        repo: 'git@github.com:kartnid/kartnid.github.io.git',
+        oauth: {
+            client_id: '4f7f3a48c5496b73196e',
+            client_secret: '88ddcf9f7a4ab8709c3e40e25f28a29cf5cde05c',
+        },
+    })
+    gitment.render('container')
+</script>
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="https://ws1.sinaimg.cn/large/006wwUIngy1fiij7w1fpuj30dc0dcmxn.jpg" alt="'s avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        ktsbry@gmail.com
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="#" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2017/08/">八月 2017<span class="sidebar_archives-count">1</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+
+    <!-- Pages  -->
+    
+
+    <!-- Article Number  -->
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+    <div class="sidebar-divider"></div>
+
+
+<!-- Theme Material -->
+
+    <a href="https://github.com/viosey/hexo-theme-material"  class="sidebar-footer-text-a" target="_blank">
+        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+            主题 - Material
+            <span class="sidebar-badge badge-circle">i</span>
+        </div>
+    </a>
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+        <a href="https://twitter.com/ktsbry" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-twitter">
+                <span class="visuallyhidden">Twitter</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Facebook -->
+    
+
+    <!-- Google + -->
+    
+        <a href="https://plus.google.com/u/0/111198526861401704879" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-gplus">
+                <span class="visuallyhidden">Google Plus</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+        <a href="https://github.com/KartNid" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-github">
+                <span class="visuallyhidden">Github</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+    
+    <!-- V2EX -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©<script type="text/javascript">var fd = new Date();document.write("&nbsp;" + fd.getFullYear() + "&nbsp;");</script>Karthus`s Blog
+            
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?1BcfzuNXqV+ntF6gq+5X3Q==", true)</script>
+
+
+
+    <script>lsloader.load("js_js","/js/js.min.js?V/53wGualMuiPM3xoetD5Q==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+
+
+
+
+
+   <!-- Gitment -->
+
+
+
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('<link rel="stylesheet" href="/css/uc.css">');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+
+<script>
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.0 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
+                </main>
+            </div>
+        </body>
+    
+</html>
