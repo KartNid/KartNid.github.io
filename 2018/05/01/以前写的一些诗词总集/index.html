@@ -39,7 +39,7 @@
     
     <title>
         
-            归档: 2017/8 | 
+            以前写的一些诗词总集 | 
         
         Karthus`s Blog
     </title>
@@ -51,7 +51,7 @@
     <meta name="theme-color" content="#0097A7">
     <meta name="author" content="">
     <meta name="description" itemprop="description" content="Zhu Mingrui">
-    <meta name="keywords" content="">
+    <meta name="keywords" content=",诗词">
 
     <!-- Import lsloader -->
     <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(key){try{localStorage.removeItem(key)}catch(e){}};lsloader.setLS=function(key,val){try{localStorage.setItem(key,val)}catch(e){}};lsloader.getLS=function(key){var val="";try{val=localStorage.getItem(key)}catch(e){val=""}return val};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var keys=[];for(var i=0;i<localStorage.length;i++){keys.push(localStorage.key(i))}keys.forEach(function(key){var data=lsloader.getLS(key);if(window.oldVersion){var remove=window.oldVersion.reduce(function(p,c){return p||data.indexOf("/*"+c+"*/")!==-1},false);if(remove){lsloader.removeLS(key)}}})}catch(e){}};lsloader.clean();lsloader.load=function(jsname,jspath,cssonload,isJs){if(typeof cssonload==="boolean"){isJs=cssonload;cssonload=undefined}isJs=isJs||false;cssonload=cssonload||function(){};var code;code=this.getLS(jsname);if(code&&code.indexOf(versionString)===-1){this.removeLS(jsname);this.requestResource(jsname,jspath,cssonload,isJs);return}if(code){var versionNumber=code.split(versionString)[0];if(versionNumber!=jspath){console.log("reload:"+jspath);this.removeLS(jsname);this.requestResource(jsname,jspath,cssonload,isJs);return}code=code.split(versionString)[1];if(isJs){this.jsRunSequence.push({name:jsname,code:code});this.runjs(jspath,jsname,code)}else{document.getElementById(jsname).appendChild(document.createTextNode(code));cssonload()}}else{this.requestResource(jsname,jspath,cssonload,isJs)}};lsloader.requestResource=function(name,path,cssonload,isJs){var that=this;if(isJs){this.iojs(path,name,function(path,name,code){that.setLS(name,path+versionString+code);that.runjs(path,name,code)})}else{this.iocss(path,name,function(code){document.getElementById(name).appendChild(document.createTextNode(code));that.setLS(name,path+versionString+code)},cssonload)}};lsloader.iojs=function(path,jsname,callback){var that=this;that.jsRunSequence.push({name:jsname,code:""});try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(path,jsname,xhr.response);return}}that.jsfallback(path,jsname)}};xhr.send(null)}catch(e){that.jsfallback(path,jsname)}};lsloader.iocss=function(path,jsname,callback,cssonload){var that=this;try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(xhr.response);cssonload();return}}that.cssfallback(path,jsname,cssonload)}};xhr.send(null)}catch(e){that.cssfallback(path,jsname,cssonload)}};lsloader.iofonts=function(path,jsname,callback,cssonload){var that=this;try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(xhr.response);cssonload();return}}that.cssfallback(path,jsname,cssonload)}};xhr.send(null)}catch(e){that.cssfallback(path,jsname,cssonload)}};lsloader.runjs=function(path,name,code){if(!!name&&!!code){for(var k in this.jsRunSequence){if(this.jsRunSequence[k].name==name){this.jsRunSequence[k].code=code}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var script=document.createElement("script");script.appendChild(document.createTextNode(this.jsRunSequence[0].code));script.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(script);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var that=this;var script=document.createElement("script");script.src=this.jsRunSequence[0].path;script.type="text/javascript";this.jsRunSequence[0].status="loading";script.onload=function(){that.jsRunSequence.shift();if(that.jsRunSequence.length>0){that.runjs()}};document.body.appendChild(script)}};lsloader.tagLoad=function(path,name){this.jsRunSequence.push({name:name,code:"",path:path,status:"failed"});this.runjs()};lsloader.jsfallback=function(path,name){if(!!this.jsnamemap[name]){return}else{this.jsnamemap[name]=name}for(var k in this.jsRunSequence){if(this.jsRunSequence[k].name==name){this.jsRunSequence[k].code="";this.jsRunSequence[k].status="failed";this.jsRunSequence[k].path=path}}this.runjs()};lsloader.cssfallback=function(path,name,cssonload){if(!!this.cssnamemap[name]){return}else{this.cssnamemap[name]=1}var link=document.createElement("link");link.type="text/css";link.href=path;link.rel="stylesheet";link.onload=link.onerror=cssonload;var root=document.getElementsByTagName("script")[0];root.parentNode.insertBefore(link,root)};lsloader.runInlineScript=function(scriptId,codeId){var code=document.getElementById(codeId).innerText;this.jsRunSequence.push({name:scriptId,code:code});this.runjs()};lsloader.loadCombo=function(jslist){var updateList="";var requestingModules={};for(var k in jslist){var LS=this.getLS(jslist[k].name);if(!!LS){var version=LS.split(versionString)[0];var code=LS.split(versionString)[1]}else{var version=""}if(version==jslist[k].path){this.jsRunSequence.push({name:jslist[k].name,code:code,path:jslist[k].path})}else{this.jsRunSequence.push({name:jslist[k].name,code:null,path:jslist[k].path,status:"comboloading"});requestingModules[jslist[k].name]=true;updateList+=(updateList==""?"":";")+jslist[k].path}}var that=this;if(!!updateList){var xhr=new XMLHttpRequest;xhr.open("get",combo+updateList,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){that.runCombo(xhr.response,requestingModules);return}}else{for(var i in that.jsRunSequence){if(requestingModules[that.jsRunSequence[i].name]){that.jsRunSequence[i].status="failed"}}that.runjs()}}};xhr.send(null)}this.runjs()};lsloader.runCombo=function(comboCode,requestingModules){comboCode=comboCode.split("/*combojs*/");comboCode.shift();for(var k in this.jsRunSequence){if(!!requestingModules[this.jsRunSequence[k].name]&&!!comboCode[0]){this.jsRunSequence[k].status="comboJS";this.jsRunSequence[k].code=comboCode[0];this.setLS(this.jsRunSequence[k].name,this.jsRunSequence[k].path+versionString+comboCode[0]);comboCode.shift()}}this.runjs()}})();</script>
@@ -233,15 +233,18 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="http://yoursite.com">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="归档: 2017/8 | Karthus`s Blog">
+    <meta property="og:title" content="以前写的一些诗词总集 | Karthus`s Blog">
     <meta property="og:image" content="http://yoursite.com/img/favicon.png" />
     <meta property="og:description" content="Zhu Mingrui">
-    
+    <meta property="og:article:tag" content="诗词"> 
 
+    
+        <meta property="article:published_time" content="Tue May 01 2018 17:36:06 GMT+0800" />
+        <meta property="article:modified_time" content="Tue May 01 2018 18:29:25 GMT+0800" />
     
 
     <!-- The Twitter Card protocol -->
-    <meta name="twitter:title" content="归档: 2017/8 | Karthus`s Blog">
+    <meta name="twitter:title" content="以前写的一些诗词总集 | Karthus`s Blog">
     <meta name="twitter:description" content="Zhu Mingrui">
     <meta name="twitter:image" content="http://yoursite.com/img/favicon.png">
     <meta name="twitter:card" content="summary_large_image" />
@@ -249,13 +252,43 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://yoursite.com/archives/2017/08/index.html" />
+        <link rel="canonical" href="http://yoursite.com/2018/05/01/以前写的一些诗词总集/index.html" />
     
 
     <!-- Structured-data for SEO -->
     
         
 
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://yoursite.com/2018/05/01/以前写的一些诗词总集/index.html",
+    "headline": "以前写的一些诗词总集",
+    "datePublished": "Tue May 01 2018 17:36:06 GMT+0800",
+    "dateModified": "Tue May 01 2018 18:29:25 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://ws1.sinaimg.cn/large/006wwUIngy1fiij7w1fpuj30dc0dcmxn.jpg"
+        },
+        "description": "计算机、ACG与音乐"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Karthus`s Blog",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": ",诗词",
+    "description": "Zhu Mingrui",
+}
+</script>
 
 
     
@@ -289,102 +322,269 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#江城子-战殇"><span class="post-toc-number">1.</span> <span class="post-toc-text">江城子 战殇</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#蝶恋花-中秋"><span class="post-toc-number">2.</span> <span class="post-toc-text">蝶恋花 中秋</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#丙申年丁酉月辛丑日校中记夜"><span class="post-toc-number">3.</span> <span class="post-toc-text">丙申年丁酉月辛丑日校中记夜</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#天净沙-秋"><span class="post-toc-number">4.</span> <span class="post-toc-text">天净沙 秋</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#鹧鸪天"><span class="post-toc-number">5.</span> <span class="post-toc-text">鹧鸪天</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#破阵子-惊梦"><span class="post-toc-number">6.</span> <span class="post-toc-text">破阵子 惊梦</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#渔家傲"><span class="post-toc-number">7.</span> <span class="post-toc-text">渔家傲</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#丁酉年丙午月甲子日记夜"><span class="post-toc-number">8.</span> <span class="post-toc-text">丁酉年丙午月甲子日记夜</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#丁酉年丁未月丙申日记梦"><span class="post-toc-number">9.</span> <span class="post-toc-text">丁酉年丁未月丙申日记梦</span></a></li></ol>
+    </ul>
     
 
-    <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
         <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50 lazy" data-original="https://ws1.sinaimg.cn/large/006wwUIngy1fililvp5w8j31gu0gc4qp.jpg">
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(https://ws1.sinaimg.cn/large/006wwUIngy1fqvz93hcaqj31hc0i077z.jpg)">
+    
+            <p class="article-headline-p">
+                以前写的一些诗词总集
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="https://ws1.sinaimg.cn/large/006wwUIngy1fiij7w1fpuj30dc0dcmxn.jpg" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong></strong>
+        <span>5月 01, 2018</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
     
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2017/08/16/日常与非日常的交错——魔法使之夜/">日常与非日常的交错——《魔法使之夜》</a></p>
-    </div>
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/诗词/">诗词</a>
+    </ul>
+    
 
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            在这个“糜烂”的暑假里，我每天的事情就是吃了睡睡了玩，似乎已经成为了一条咸鱼。自然，在这种极度糜烂的暑假中，我通关了许...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2017/08/16/日常与非日常的交错——魔法使之夜/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="https://ws1.sinaimg.cn/large/006wwUIngy1fiij7w1fpuj30dc0dcmxn.jpg" width="44px" height="44px" alt="'s avatar">
-            </div>
-            <div>
-                <strong></strong>
-                <span>8月 16, 2017</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/ACG/">ACG</a>
-              </span>
-            
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
 
-            
+    
 
-            
-                <!-- Comment Number -->
-                &nbsp;|&nbsp;
-                <span class="post_entry-comment" >
-                        <span id = "sourceId::2017/08/16/日常与非日常的交错——魔法使之夜/" class = "cy_cmt_count" ></span>条评论
-                </span>
-            
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=以前写的一些诗词总集&url=http://yoursite.com/2018/05/01/以前写的一些诗词总集/index.html&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
 
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=以前写的一些诗词总集&url=http://yoursite.com/2018/05/01/以前写的一些诗词总集/index.html&via=" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com/2018/05/01/以前写的一些诗词总集/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Karthus`s Blog&title=以前写的一些诗词总集&summary=Zhu Mingrui&pics=http://yoursite.com/img/favicon.png&url=http://yoursite.com/2018/05/01/以前写的一些诗词总集/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 QQ
+            </li>
+        </a>
+    
+
+    <!-- Share Telegram -->
+    
+        <a class="post_share-link" href="https://telegram.me/share/url?url=http://yoursite.com/2018/05/01/以前写的一些诗词总集/index.html&text=以前写的一些诗词总集" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Telegram
+            </li>
+        </a>
+    
+</ul>
+
 </div>
 
-            
-            
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <p>整理印象笔记的时候找到了以前写的好几首诗词，实在是让人怀念。现在让我写我大概是写不出来了吧。或许我也应该反思一下了，明明有了大把的自由的时间，我干了什么呢？</p>
+<hr>
+<h4 id="江城子-战殇"><a href="#江城子-战殇" class="headerlink" title="江城子 战殇"></a>江城子 战殇</h4><pre><code>千年成败看今朝。看今朝，战神妖。握剑持枪，只见万狼嗥。欲渡北江求大道，屠恶鬼，笑群豪。
+蟪蛄蚯蚓叹天高。风龙邀，仰天嚎。回首伊人，却见冢边标。浴血归来人事改，流浊泪，奏竹箫。
+</code></pre><hr>
+<h4 id="蝶恋花-中秋"><a href="#蝶恋花-中秋" class="headerlink" title="蝶恋花 中秋"></a>蝶恋花 中秋</h4><pre><code>萧瑟夜里圆月看。相顾无言，寂寂清清晚。千万灯明如梦幻，可怜镜里无灯满。
+河畔几株孤草漫。叹问今朝，何事可圆满。细语低声飞鸟伴，透窗望去秋逝缓。
+</code></pre><hr>
+<h4 id="丙申年丁酉月辛丑日校中记夜"><a href="#丙申年丁酉月辛丑日校中记夜" class="headerlink" title="丙申年丁酉月辛丑日校中记夜"></a>丙申年丁酉月辛丑日校中记夜</h4><pre><code>天上轻云月轮照，地上玩家灯火渺。
+霜风吹过寒树摇，何人何地吹笙箫。
+</code></pre><hr>
+<h4 id="天净沙-秋"><a href="#天净沙-秋" class="headerlink" title="天净沙 秋"></a>天净沙 秋</h4><pre><code>昏昏暗暗深秋，
+挽歌凄切水流，
+古树边城遇友。
+寒霜封路，
+雾中明月相留。
+</code></pre><hr>
+<h4 id="鹧鸪天"><a href="#鹧鸪天" class="headerlink" title="鹧鸪天"></a>鹧鸪天</h4><pre><code>卧看银辉洒入枝，轻闻秋桂漫天弥。幽幽暗暗清秋里，战战兢兢寒鸟啼。
+风戏暮，雨淋黎，金轮破晓雾霜劈。泪流满面南柯梦，回首离合无所依。
+</code></pre><hr>
+<h4 id="破阵子-惊梦"><a href="#破阵子-惊梦" class="headerlink" title="破阵子 惊梦"></a>破阵子 惊梦</h4><pre><code>夜里神游心绪，梦中伏鬼游吟。一缕青烟林外去，三千英魂乘雾来。冥江浑水流。
+大鹏抟扶摇上，引无钻土回安。却见杜鹃复啼血，闻得几声雁绝归。乐时惊梦悲。
+</code></pre><hr>
+<h4 id="渔家傲"><a href="#渔家傲" class="headerlink" title="渔家傲"></a>渔家傲</h4><pre><code>屋外云消辞旧岁，天边雾散迎新会。
+欢笑小童祈春水，引柳翠，青灯悬起冬梅绘。
+晓梦蝴蝶惊醒起，四顾茫然浮屠立。
+萧瑟河湾饮酒醉，朦胧里，一曲竹笛独流泪。
+</code></pre><hr>
+<h4 id="丁酉年丙午月甲子日记夜"><a href="#丁酉年丙午月甲子日记夜" class="headerlink" title="丁酉年丙午月甲子日记夜"></a>丁酉年丙午月甲子日记夜</h4><pre><code>遥望明月心不静，壮志填膺久难平。
+十年成败今朝定，吾辈岂甘蓬蒿行。
+</code></pre><hr>
+<h4 id="丁酉年丁未月丙申日记梦"><a href="#丁酉年丁未月丙申日记梦" class="headerlink" title="丁酉年丁未月丙申日记梦"></a>丁酉年丁未月丙申日记梦</h4><pre><code>池里莲花盛清露，屋边青柳簇青竹。
+巧逢淑女与同路，一笑一颦一踌躇。
+</code></pre><hr>
+<p>最后，以一首歌结尾。</p>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=408943444&auto=0&height=66"></iframe>
+
         
     
 
     
+</div>
 
-    
-        <script type="text/ls-javascript" id="thumbnail-script">
-    var randomNum;
 
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
+                
 
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
-    $('.post_thumbnail-random').addClass('lazy');
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用 changyan -->
+<div id="changyan-comment">
+    <!--PC和WAP自适应版-->
+<div id="SOHUCS" sid="2018/05/01/以前写的一些诗词总集/"  ></div>
+<script type="text/javascript">
+(function(){
+var appid = 'cytaqHJOe';
+var conf = 'prod_90575585e2ef2db56a3116b0b0c73f35';
+var width = window.innerWidth || document.documentElement.clientWidth;
+if (width < 960) {
+window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); </script>
 
-        locatePost = locatePost.next();
+</div>
+<style>
+    #changyan-comment{
+        background-color: #eee;
+        padding: 2pc;
     }
-</script>
+</style>
 
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
     
-</div>
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2018/04/30/megalobox/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     
