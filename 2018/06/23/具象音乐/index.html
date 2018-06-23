@@ -39,7 +39,7 @@
     
     <title>
         
-            杂谈 | 
+            具象音乐 | 
         
         Karthus`s Blog
     </title>
@@ -51,7 +51,7 @@
     <meta name="theme-color" content="#0097A7">
     <meta name="author" content="">
     <meta name="description" itemprop="description" content="Zhu Mingrui">
-    <meta name="keywords" content="">
+    <meta name="keywords" content=",现代音乐">
 
     <!-- Import lsloader -->
     <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(key){try{localStorage.removeItem(key)}catch(e){}};lsloader.setLS=function(key,val){try{localStorage.setItem(key,val)}catch(e){}};lsloader.getLS=function(key){var val="";try{val=localStorage.getItem(key)}catch(e){val=""}return val};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var keys=[];for(var i=0;i<localStorage.length;i++){keys.push(localStorage.key(i))}keys.forEach(function(key){var data=lsloader.getLS(key);if(window.oldVersion){var remove=window.oldVersion.reduce(function(p,c){return p||data.indexOf("/*"+c+"*/")!==-1},false);if(remove){lsloader.removeLS(key)}}})}catch(e){}};lsloader.clean();lsloader.load=function(jsname,jspath,cssonload,isJs){if(typeof cssonload==="boolean"){isJs=cssonload;cssonload=undefined}isJs=isJs||false;cssonload=cssonload||function(){};var code;code=this.getLS(jsname);if(code&&code.indexOf(versionString)===-1){this.removeLS(jsname);this.requestResource(jsname,jspath,cssonload,isJs);return}if(code){var versionNumber=code.split(versionString)[0];if(versionNumber!=jspath){console.log("reload:"+jspath);this.removeLS(jsname);this.requestResource(jsname,jspath,cssonload,isJs);return}code=code.split(versionString)[1];if(isJs){this.jsRunSequence.push({name:jsname,code:code});this.runjs(jspath,jsname,code)}else{document.getElementById(jsname).appendChild(document.createTextNode(code));cssonload()}}else{this.requestResource(jsname,jspath,cssonload,isJs)}};lsloader.requestResource=function(name,path,cssonload,isJs){var that=this;if(isJs){this.iojs(path,name,function(path,name,code){that.setLS(name,path+versionString+code);that.runjs(path,name,code)})}else{this.iocss(path,name,function(code){document.getElementById(name).appendChild(document.createTextNode(code));that.setLS(name,path+versionString+code)},cssonload)}};lsloader.iojs=function(path,jsname,callback){var that=this;that.jsRunSequence.push({name:jsname,code:""});try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(path,jsname,xhr.response);return}}that.jsfallback(path,jsname)}};xhr.send(null)}catch(e){that.jsfallback(path,jsname)}};lsloader.iocss=function(path,jsname,callback,cssonload){var that=this;try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(xhr.response);cssonload();return}}that.cssfallback(path,jsname,cssonload)}};xhr.send(null)}catch(e){that.cssfallback(path,jsname,cssonload)}};lsloader.iofonts=function(path,jsname,callback,cssonload){var that=this;try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(xhr.response);cssonload();return}}that.cssfallback(path,jsname,cssonload)}};xhr.send(null)}catch(e){that.cssfallback(path,jsname,cssonload)}};lsloader.runjs=function(path,name,code){if(!!name&&!!code){for(var k in this.jsRunSequence){if(this.jsRunSequence[k].name==name){this.jsRunSequence[k].code=code}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var script=document.createElement("script");script.appendChild(document.createTextNode(this.jsRunSequence[0].code));script.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(script);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var that=this;var script=document.createElement("script");script.src=this.jsRunSequence[0].path;script.type="text/javascript";this.jsRunSequence[0].status="loading";script.onload=function(){that.jsRunSequence.shift();if(that.jsRunSequence.length>0){that.runjs()}};document.body.appendChild(script)}};lsloader.tagLoad=function(path,name){this.jsRunSequence.push({name:name,code:"",path:path,status:"failed"});this.runjs()};lsloader.jsfallback=function(path,name){if(!!this.jsnamemap[name]){return}else{this.jsnamemap[name]=name}for(var k in this.jsRunSequence){if(this.jsRunSequence[k].name==name){this.jsRunSequence[k].code="";this.jsRunSequence[k].status="failed";this.jsRunSequence[k].path=path}}this.runjs()};lsloader.cssfallback=function(path,name,cssonload){if(!!this.cssnamemap[name]){return}else{this.cssnamemap[name]=1}var link=document.createElement("link");link.type="text/css";link.href=path;link.rel="stylesheet";link.onload=link.onerror=cssonload;var root=document.getElementsByTagName("script")[0];root.parentNode.insertBefore(link,root)};lsloader.runInlineScript=function(scriptId,codeId){var code=document.getElementById(codeId).innerText;this.jsRunSequence.push({name:scriptId,code:code});this.runjs()};lsloader.loadCombo=function(jslist){var updateList="";var requestingModules={};for(var k in jslist){var LS=this.getLS(jslist[k].name);if(!!LS){var version=LS.split(versionString)[0];var code=LS.split(versionString)[1]}else{var version=""}if(version==jslist[k].path){this.jsRunSequence.push({name:jslist[k].name,code:code,path:jslist[k].path})}else{this.jsRunSequence.push({name:jslist[k].name,code:null,path:jslist[k].path,status:"comboloading"});requestingModules[jslist[k].name]=true;updateList+=(updateList==""?"":";")+jslist[k].path}}var that=this;if(!!updateList){var xhr=new XMLHttpRequest;xhr.open("get",combo+updateList,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){that.runCombo(xhr.response,requestingModules);return}}else{for(var i in that.jsRunSequence){if(requestingModules[that.jsRunSequence[i].name]){that.jsRunSequence[i].status="failed"}}that.runjs()}}};xhr.send(null)}this.runjs()};lsloader.runCombo=function(comboCode,requestingModules){comboCode=comboCode.split("/*combojs*/");comboCode.shift();for(var k in this.jsRunSequence){if(!!requestingModules[this.jsRunSequence[k].name]&&!!comboCode[0]){this.jsRunSequence[k].status="comboJS";this.jsRunSequence[k].code=comboCode[0];this.setLS(this.jsRunSequence[k].name,this.jsRunSequence[k].path+versionString+comboCode[0]);comboCode.shift()}}this.runjs()}})();</script>
@@ -233,15 +233,18 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="http://yoursite.com">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="杂谈 | Karthus`s Blog">
+    <meta property="og:title" content="具象音乐 | Karthus`s Blog">
     <meta property="og:image" content="http://yoursite.com/img/favicon.png" />
     <meta property="og:description" content="Zhu Mingrui">
-    
+    <meta property="og:article:tag" content="现代音乐"> 
 
+    
+        <meta property="article:published_time" content="Sat Jun 23 2018 21:33:56 GMT+0800" />
+        <meta property="article:modified_time" content="Sat Jun 23 2018 22:09:12 GMT+0800" />
     
 
     <!-- The Twitter Card protocol -->
-    <meta name="twitter:title" content="杂谈 | Karthus`s Blog">
+    <meta name="twitter:title" content="具象音乐 | Karthus`s Blog">
     <meta name="twitter:description" content="Zhu Mingrui">
     <meta name="twitter:image" content="http://yoursite.com/img/favicon.png">
     <meta name="twitter:card" content="summary_large_image" />
@@ -249,13 +252,43 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://yoursite.com/something/index.html" />
+        <link rel="canonical" href="http://yoursite.com/2018/06/23/具象音乐/index.html" />
     
 
     <!-- Structured-data for SEO -->
     
         
 
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://yoursite.com/2018/06/23/具象音乐/index.html",
+    "headline": "具象音乐",
+    "datePublished": "Sat Jun 23 2018 21:33:56 GMT+0800",
+    "dateModified": "Sat Jun 23 2018 22:09:12 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://ws1.sinaimg.cn/large/006wwUIngy1fiij7w1fpuj30dc0dcmxn.jpg"
+        },
+        "description": "计算机、ACG与音乐"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Karthus`s Blog",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": ",现代音乐",
+    "description": "Zhu Mingrui",
+}
+</script>
 
 
     
@@ -291,6 +324,30 @@
 
                     <!-- Post TOC -->
 
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+
+
+
 
 <!-- Layouts -->
 
@@ -317,7 +374,7 @@
         
     
             <p class="article-headline-p">
-                杂谈
+                具象音乐
             </p>
         </div>
 
@@ -336,7 +393,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong></strong>
-        <span>8月 14, 2017</span>
+        <span>6月 23, 2018</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -354,6 +411,15 @@
 
     <!-- Tags (bookmark) -->
     
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/现代音乐/">现代音乐</a>
+    </ul>
+    
 
     <!-- Share -->
     <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
@@ -367,7 +433,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=杂谈&url=http://yoursite.com/something/index.html&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=具象音乐&url=http://yoursite.com/2018/06/23/具象音乐/index.html&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -376,7 +442,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=杂谈&url=http://yoursite.com/something/index.html&via=" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=具象音乐&url=http://yoursite.com/2018/06/23/具象音乐/index.html&via=" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -388,7 +454,7 @@
 
     <!-- Share Google+ -->
     
-        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com/something/index.html" target="_blank">
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com/2018/06/23/具象音乐/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Google+
             </li>
@@ -400,7 +466,7 @@
 
     <!-- Share QQ -->
     
-        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Karthus`s Blog&title=杂谈&summary=Zhu Mingrui&pics=http://yoursite.com/img/favicon.png&url=http://yoursite.com/something/index.html" target="_blank">
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Karthus`s Blog&title=具象音乐&summary=Zhu Mingrui&pics=http://yoursite.com/img/favicon.png&url=http://yoursite.com/2018/06/23/具象音乐/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 QQ
             </li>
@@ -409,7 +475,7 @@
 
     <!-- Share Telegram -->
     
-        <a class="post_share-link" href="https://telegram.me/share/url?url=http://yoursite.com/something/index.html&text=杂谈" target="_blank">
+        <a class="post_share-link" href="https://telegram.me/share/url?url=http://yoursite.com/2018/06/23/具象音乐/index.html&text=具象音乐" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Telegram
             </li>
@@ -424,7 +490,19 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        
+        <blockquote>
+<p>具象音乐(Musique Concrete)是指直接对采录到的自然中已有的具体声响借助电子手段<br>进行剪切、变速、横向叠加、倒放等处理来创作的音乐。但通常不会将素材调变到无法识辨的<br>地步，即声响源的可感知性是具象音乐的重要特征。<br>    具象音乐(Musique Concrete)最早是由法国音乐先驱皮埃尔.舍费尔(Pierre Schaeffer)<br>和他的伙伴皮埃尔.亨利（Pierre Henry）于20世纪50年代最先提出并概念化的，用于与当<br>时的传统记谱音乐加以区分，但他们却不是此类音乐的最早尝试者。因为早在1927年，安太尔<br>（Antheil）就曾将汽车喇叭声、锯声、电钻声等运用到芭蕾舞的配乐中了。<br>    做为一种独特的音乐类型，此类音乐不仅使创作者在创作思维上得到大解放、在音乐素材<br>的选取上提供无限可能性，而且在创作手法与操作形式上相对于传统记谱音乐来讲带有很强的<br>实验性及极广的探索性。创作结果呢，也有无限趣味性和不可预测性。相对于传统记谱音乐来<br>说，这在当时来讲是一场极具颠覆性的音乐领域内的革命，因为它打开了人类进入全新音乐领<br>域的大门。<br>    具象音乐(Musique Concrete)相较于传统记谱音乐的另一个异同点是：具象音乐是从已<br>有的、存在了的声音素材入手来考虑应用，这些素材可以是乐音，也可以是噪音。而传统记谱<br>音乐则是先在大脑中进行诸如声音结构、配器等方面的构思，然后记到谱纸上，最后再通过各<br>种乐器的演奏来得以实现。也就是说，传统的记谱音乐是先从抽象的构思观念开始，再由演奏<br>变为具体的音乐；而具象音乐(Musique Concrete)则是从具体的材料开始，然后用这些材料<br>在创作过程中再进行抽象的思维。<br>    那么具象音乐(Musique Concrete)是产生在一个什么样的社会和文化背景下呢？<br>    二十世纪初，现代化大机器生产的发展与大都市生活的纷繁，使部分不安分的艺术家发现<br>了音乐发展新的丰富的资源，即一切声音皆可入乐这样一种未来主义音乐艺术思潮。如著名的<br>噪音艺术家鲁索罗就曾做过具象音乐的尝试。具象音乐随后的发展首先表现在对作品速度的加<br>快、制作手段的更加复杂化和节奏与情感因素的更加丰富化。到二十世纪五十年代与六十年代<br>期间，艺术家们开始充分利用所能利用的一切电子手段与电子设备来创作从而使具象音乐变的<br>疯狂，并开始广泛应运于电影、芭蕾与其它新媒体艺术等领域。如瓦莱滋（Edgar Varese）的<br>作品《电子诗歌》（poem electronique）就用了四台放映机、八个照明灯、五十个灯泡等。<br>再如1957-8年塞纳基斯在创作作品《构成》时则运用了数学的结构学。同期，工业机械对当时<br>世界的影响也已反映到作曲家对素材的选择上，如气流声、铃声等。从六十年代开始，具象音<br>乐开拓到艺术家们开始将旧的简单的具象音乐加以大的扩充。如有艺术家开始在音响以外另加<br>合成器与歌词，创作出一种讲述故事的这样别具风格的具象音乐来。<br>     在具象音乐发展的后期阶段，从整体上看，尽管从理论上来说，广泛的声音素材都可以<br>纳入具象音乐的范畴，但材料的简练是具象音乐发展的又一个基本特征。每个作品只有为数不多<br>的几种声音材料，有的甚至只有一种声音素材。听起来极为怪诞，具有明显的未来主义倾向。作<br>品在音乐语言上通常采用拉的很长的音符和很低的声音频率，听起来感觉似乎是在流动发展，但<br>非常缓慢，作品往往显得非常长。一大批二十世纪后半叶很多重要的现代艺术家经过努力，使具象<br>音乐朝着多元化的方向发展，并拓宽了具象音乐的“实验范围”。对音乐架构的把握与声音素材的<br>展开等意识都极大地推动了具象音乐和电子音乐的历史进程，也使具象音乐成为现代音乐领域的一<br>种重要的种类。</p>
+</blockquote>
+<p>（以上摘自科技资讯2005年第34期，文/周日升）</p>
+<p>作为一种先锋现代音乐，具象音乐自然是极其小众的。我也是在听了中国音乐人姚春旸的专辑《Shining Cracks》之后才了解到这种音乐类型。</p>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="450" src="//music.163.com/outchain/player?type=1&id=34743762&auto=0&height=430"></iframe>
+
+<p>因为这种音乐本身的特性，能够欣赏来的自然是少数。那么如何能够欣赏这类作品呢？一下引用知乎里的一个回答。<br>原文链接：如何欣赏具体音乐（Musique concrète）？ - 王兆谷的回答 - 知乎<br><a href="https://www.zhihu.com/question/20686624/answer/48612985" target="_blank" rel="noopener">https://www.zhihu.com/question/20686624/answer/48612985</a></p>
+<blockquote>
+<p>我是一个漂流法国寻找一些比较正统的音乐教育，几经波折之后终于有幸拜入了当年开创具体音乐班里的首席助手Denis Dufour的门下学习具体音乐(Musique Concrete)，后来经由Denis Dufour先生介绍与Pierre Henry，Ivo Malec，Jonathan Prager，Michel Chion这些公认的大师人物一一接触，甚至还有幸在10年与Bernard Parmegiani见过一面，虽然他于前年11月仙逝，不过那次会面学到了很多东西。<br>更新<br>2015年9月27日，见过了Daniel Terrugi<br>2016年1月8号昨天刚见过Guy Reibel长谈了，关于Boulez死去后整个音乐艺术将会朝什么方向发展。我们都表示很欢乐。<br>2016年3月31号，在Denis Dufour的介绍下碰到了Ivo Malec<br>寒窗几年的研究学习，加上近距离与这些曾经一与舍菲尔（Pierre Schaeffer）开创并且发展这们音乐的先驱人物基础后，我认为至少在这具体块领域的见解还是比较正确的。写下这篇答案，虽然有点长，就是想给真正想要了解的人看的。嫌太长不看的请绕道，对于真正求知的人不会满足于粗糙的三言两语的解释。<br>（如果想要转载，请尊重原作者为此所付出的努力，注明原作者。）<br>－－－－－分割线－－－－－<br>首先具体音乐（Mucique Conrète）是现代电子声学音乐(Electroacoustic music)当中的一个分类，有些人说是具体音乐标志着电子音乐的开始，其实如果仅仅从电子设备的使用角度来看，早在1920年左右，在美国和加拿大就已经有人开始使用了电子或模拟设备来产生音调音高，甚至有用声音素材作为音效配在一些迪士尼的动画电影中，这些尝试都是非常有建设性的，可是他们的尝试都在音效制作上，到现代已经演变为一门叫做声音设计（Sound Design）也是非常了不起的一门学科。然而这种声音设计和制作始终与“音乐”的广泛定义并没什么关系。真正将这些声音制作定义为“音乐”的分界点是1948年舍菲尔的《Etude aux Chemins de Fer》，也是舍菲儿提出具体音乐的年份，自此以后才算真正开创了一个全新的音乐时代，让音乐家们去思考如何该直面声音的所有细节，应该如何表达出声音的心理能量等等。<br>时至今日包括哈佛大学在内的自称一流的学院派，也开设了具体音乐的研究专业。可他们对这种具体音乐的解读仅限于“这样的声音能否是音乐呢？”，就好像对杜尚的作品《泉》解读“这样的买来的小便池可以成为以艺术品吗？”，对于《L.H.O.O.Q》“艺术可以是这样的吗？”。我们现在都知道，这些问题的答案都是Yes，it can be，但是之后的SO WHAT？如何理解，如何鉴赏，如何明白这些问题上，就哪些“砖家”就只能可悲的用一些他们捉襟见肘的哲学知识，把人们绕在话某些题上打转一下。所以我长篇大论的写这篇回答，是想要如过对这个问题有困惑的朋友，碰巧搜索到了这个回答，能够为大家解答为什么这种具体音乐可以叫做“音乐”，为什么会有这样的音乐。真正的具体音乐是什么样的？发展到今天它又有什么出路。<br>关于什么是具体音乐，至少我所遇到的那些具体音乐领域内的大人物，他们都一致的并且极力要跟我表明一个事实：“目前绝大部分的学院派根本就没有理解一丁点舍菲尔的具体音乐意义。”为什么会出现这样的现象呢？如果仅仅从字面上理解，具体＋音乐，跟具体音乐它表现出来的那么抽象的艺术形态根本不着边。甚至还有些“一流学院”草草的解读说是因为有哪些我们可以辨识原物的声音组成的音乐，就好像是“具体的事物”在我们眼前一样就叫具体音乐。可是如果真的好好查阅一下文献，这个解释简直大错特错！舍菲尔本人提出对具体音乐的解释，当天做了两个多小时的讲座，最后归纳下来大致对于他所提的“具体”的真正定义是这样的：“以往的音乐作曲，是写在乐谱上，再演奏成音乐。然而乐谱不是音乐，只有通过演奏乐器发声才能变成音乐。写下的乐谱仅是代表一个想象的演奏效果，是抽象的，乐谱上的一切标记都是用来代表音乐的编码，但本身不是音乐，只有它被演奏出来时才能听到效果。具体音乐是我直接在我听到的声音上面作曲。作曲就不再使用乐谱音符，我听到的就是音乐是我想要的，如果有问题我直接在声音上进行调整，我理解这个声音的所有要素，相对于以往的抽象来说这就是具体。”这种创作手法完全颠覆了传统意义上对音乐创作的理解，有一部分传统音乐家如布莱茲（Boulez）不愿意接受这种音乐，但是同时反而获得了更多音乐家开始追捧如施多克豪森（Stokhaussen）格拉斯（Glass）等等。许多学者也由此发问：“我们该怎么定义音乐？”。舍菲而做了这样的回答：“La musique, c’est<br>l’homme, à l’homme décrit, dans le langage des choses.”（音乐，是一个人，向另一个人去表达，用事物来作为语言。）舍菲尔后来专门也成立了音乐研究组GRM，来专门研究这种音乐。<br>在舍费尔之后的接班人拜勒（Bayle）也添加了另一种概念Musique Acousmatique（纯声音乐）。这两者使用的同一种理论，不过拜勒认为当人们尝试减弱视觉的主导的时候，听觉的敏感度就会极大的提升。<br>后来大家都认同这种说法其实才更贴切舍费尔想真正要表达的内容，因为在这之前音乐的形态始终是抽象的，但是这种作曲手法是具体直接的在音乐上进行具体创作。<br>有的人提出具体音乐是一个跟随科技发展的产物，在具体音乐最早期对于具体音乐的尝试是在留声机的软碟上，后来伴随着科技的发展改用了录音磁带，还有一些合成器（Synthétiseur）最后到现在的电子数字音频系统。这是伴随科技发展对材质的改进演变，但是这种说法并不完全准确，若仅仅是操作平台的进化，这种变革对于创作手法和主题并没有丝毫的改变。然而舍菲尔设立的音乐研究组GRM（Groupe de Recherche Musicale）提出了根深层次的观点——利用这些设备所有人终于可以反复的聆解析些同一个声音了解到它所有特质。舍费尔和GRM先后出版了两本书来解释方法《Traitee des Objets Musiceaux》还有附带音频解说的《Solfeges des Objets Sonores》（很可惜目前这两本书只有法文版，我近几年来一直很努力的在寻找出版社，希望能够一些帮助进行翻译中文版并发行，不过因为是一个比较专业向的小众群体，市场经济社会，最后结果大家都懂的。。。。）在这两本书中舍菲儿提出了大量哪怕是现今看起来都非常有前卫性的思维，他提出的四种听的阶段，注意-&gt;感知-&gt;认知-&gt;理解。在近代心理学的感官分析上，至今都在一直被深入讨论这些话题。而舍费尔当时已经完全证实这种设想，并且完全运用在了音乐的制作上。<br>在这个角度上，具体音乐对于现代音乐也是有极其重要贡献的，甚至有些过于“超前”让好多音乐“砖家”都难以接受这种音乐的合理性。在使用了舍费而四个阶段的的听觉想法后，我们发觉音乐除了是物理学上的能量波动传导外，还有在声音人的精神意识里产生的“形象”，“寓意”等一系列的反应。当开始寻找声音所携带的更深层次的信息时，自然而然的必须把声音当中所有的细节都辨析清楚，再开始思考这当中的所有意义。比如说打击乐的大鼓声，发出低沉的“咚”，然而我们研究的不仅仅是在击打的那一下发出的声音，而且还有之后的“翁～～～～”的鼓腔余音。再比如乒乓球自由落体到落在地上“嗒～～～～嗒~～～嗒~～嗒~嗒嗒嗒嗒……”是一系列相近的声音，间隔逐渐靠近，力度逐渐减弱，而且最后快速的弹跳声几乎粘连在一起，听起来好像是一个“滋～～”的声音。再比如我们开关门的时候的“吱呀”声，其实是由轴产生的摩擦，传递到在门上把震幅放大了，开的快音调就高，开得慢音调就低，缓缓的移动，能变成不同的音调组合，成为一个非常有趣的游戏。Pierre Henry为此就创作了《门与休止符的变奏曲》。对所有的这些声音我们称之为声音素材（Sound Object）。研究并且运用，声音素材中包含了大量的信息，最后以制成音乐为目的。当使用较高的音频浮动人们就会联想到鸟叫，具有一定强度的低音能让人有产生想要运动的刺激。然后寻找这些声音素材相互之间的呼应，融合，如何完成。最终产生的音乐就是许许多多的奇怪声音人工的相互混合在一起。我的恩师Denis Dufour在他的一个作品中提到：一旦了解这种音乐之后，人们对世界的感知就跟以往不再相同了，对世界的看法也不再相同。<br>那么这种音乐的价值意义在哪里？这么吹毛求疵的追求声音这些细节真的有必要吗？相比之下很显然的不是有旋律的音乐更佳动听美妙吗？我们仔细观察现代社会的飞速发展，瓦雷茲说：人类从来都没有像现在这么吵闹过。是的，我们的工业在推动进步的同时，也给我们的生活带来了永无休止的噪音。除了噪音之外，平日里我们所获取的知识和信息的密度也是空前的庞大，街道上密集的店铺和广告，目的都是恨不得刺入所有路人的眼中，深入到他们的意识里。所以在这个时代之中生活成长的人们，一直以来都处于被迫接受高强度信息。为了适应这种环境，承受能力和处理能力也变得更强。这种演变也是存在于其他音乐当中，也可以对比一些流行音乐的演变，当下的音乐厚度，密度都要比三四十年前的音乐要复杂得多。早在20世纪的古典音乐家也都意识到了这些问题，他们明白如果继续使用几百年前设立的的十二平均律早已满足不了当下人们对精细度的要求了，甚至有点太粗旷了。这是古典的罗曼晚期走入近代音乐的一个趋势，把追求高密度和复杂化的注意力转投向了精细化并抽象化。在具体音乐诞生的同一时期也存在有序列音乐，微分音，频谱音乐，简约音乐。所有的这些都存在着这种精细化并抽象化的思想。在人类大脑只要能力还绰绰有余时，一旦获取到了新的知识为度，在本能驱使下就再也回不到以往的状态了。<br>另一方面，具体音乐也有受到近代艺术的影响。在杜尚之后，人们对于艺术还有艺术品的本质理解也发生了变化。不再停留在艺术品的“本体”上，此外还有从艺术中寻找到的“观念”。先前提到的《泉》（不知道的可以到随便哪个搜索引擎去搜索一下根本不是难事。）是一种观念，仔细观察小便池是被倒放的，“个体”上它不过是一个被倒放的小便池，但是艺术并不是要呈现告诉人们“这就是小便池”，重重的打破了人们传统思维的惯性。从“观念”上艺术家决定了它的呈现状态（就是这这么横着放），其次还有它的形状，呈对称性，凹陷还有内部的空洞，光滑的外表，等等都表示着某些寓意的解读。如果仅仅停留在“个体”层面就会失去所有这些“观念”上的联想。同样《L.H.O.O.Q》那两撇小胡子，如果画在白纸上，或是画在一个圆圈上都有不同的含义表现的结果也不一样，因为在认知上这两撇有着非常强烈的拟人化，男性化的力量，因此杜尚选择画在了蒙娜丽莎的脸上。<br>许多教授具体音乐的比如：现任GRM主任Daniel Terrugi,里昂高等音乐学院具体音乐教授Francois Roux,法国电子音乐教育协会主席Lucie Prod’homme，还有我的恩师Denis Dufour都一致认为学习具体音乐不需要接受繁琐的古典音乐知识，我亲眼见证了Denis Dufour收过的一个学生，从一个没有任何音乐基础，也没有受过任何高等教育，经过四年的学习后，直接拿拿到了比利时蒙斯皇家音乐学院的博士OFFER。因为再具体音乐中，相对于复杂又无意义的调性乐理知识，我们更关注这样的声音声音放在哪里，与什么样的声音结合，赋予什么样的意义，声音个体的细节又有怎么样的表现，他们之间如何相互产生呼应，都是相当值得思考的问题。一流的古典音乐家一直以来，对于每个音符的意义也一直在思考同样的问题。音乐从来都不是孤立的音符而是整体所形成的效果，每个音符都是渺小的一个棋子最后形成一盘庞大的系统。<br>所有从来都没有音乐家会去考虑“使用得最多的音是哪个”这样的问题。有的声音很可能让人直接联想到，玻璃，鸟叫，可是当代艺术家要展现给你的并不只是“这是什么东西”，更多的还有的是这个整体，这个作品所带来的意义，所表达了一个什么样的能量。</p>
+</blockquote>
+<p>这篇文章全当抛砖引玉。这个时代是一个对于艺术反智的时代，尤其是在还没有进入发达国家的中国。人们在物质生活上并没有满足，因此并不会投入太多精力在满足自己的精神生活上。回望过去十年国内的音乐作品，全都在走下坡路。在国内这个小鲜肉当道、无内涵情歌横行的音乐环境里，有多少人能谈论音乐的艺术呢？<br>宝瑟泠泠千古调，朱丝弦断知音少。</p>
+
         
     
 
@@ -440,7 +518,7 @@
     <!-- 使用 changyan -->
 <div id="changyan-comment">
     <!--PC和WAP自适应版-->
-<div id="SOHUCS" sid="something/index.html"  ></div>
+<div id="SOHUCS" sid="2018/06/23/具象音乐/"  ></div>
 <script type="text/javascript">
 (function(){
 var appid = 'cytaqHJOe';
@@ -469,6 +547,14 @@ window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="tex
     <div class="section-spacer"></div>
 
     <!-- Next Nav -->
+    
+        <a href="/2018/05/01/以前写的一些诗词总集/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
     
 </nav>
 
@@ -635,6 +721,14 @@ It will not impact the appearance and can give developers a lot of support :)
 </aside>
 
                     
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
 
                     
 
